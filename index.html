@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<meta charset="utf-8">
+  	<title>PJs Tachyons Template</title>
+  	<meta name="description" content="">
+  	<meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+
+  <!-- CSS
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<link rel="stylesheet" href='static/custom.css' >
+  	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+
+  <!-- JS
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<script src="js/client.js"></script>
+
+  <!-- Favicon
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<link rel="icon" type="image/png" href="../../dist/images/favicon.ico">
+
+  </head>
+  <body onLoad ="rangeSlider()">
+
+  <!-- Primary Page Layout
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+<section class="sans-serif bg-white black ">
+	<div class="fl w-100 ph3 bg-white black pa3">
+		
+		<div class="container tc">
+		  <div>
+		  	<div class = "pb2"> I have felt cheerful and in good spirits:</div>
+		  	<output id="my-range-1-value" class ="b">5</output> </br>
+		  	Always <input id = "my-range-1" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
+		  </div>
+		  <div>
+		  	<div class = "pb2"> I have felt calm and relaxed</div>
+		  	<output id="my-range-2-value" class ="b">5</output></br>
+		  	Always <input id = "my-range-2" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
+		  </div>
+		  <div>
+		  	<div class = "pb2"> I have felt active and vigorous</div>
+		  	<output id="my-range-3-value" class ="b">5</output></br>
+		  	Always <input id = "my-range-3" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
+		  </div>
+		  <div>
+		  	<div class = "pb2"> I woke up feeling fresh and rested</div>
+		  	<output id="my-range-4-value" class ="b">5</output></br>
+		  	Always <input id = "my-range-4" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
+		  </div>
+		  <div>
+		  	<div class = "pb2"> My daily life has been filled with things that interest me </div>
+		  	<output id="my-range-5-value" class ="b">5</output></br>
+		  	Always <input id = "my-range-5" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
+		  </div>
+		 </div>
+
+		 <div class="bg-dark-gray white pa3">
+		 	<div class = "b f3"> Results </div>
+		 	<div class = "pb3"> You have a score of <output id="final-score" class ="b"></output></div>
+		 	<div class = "dn" id ="score-above-13"> 
+		 		Based on your score we recommend the following solutions (add text for above 13)
+
+		 	</div>
+		 	<div class = "dn" id = "score-below-13"> 
+		 		Based on your score, we can recommend the following solutions (add text for under 13)
+
+		 	</div>
+
+		 </div>
+
+
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="sans-serif bg-dark-gray white ">
+	<div class="fl w-100 ph1 bg-dark-gray white pa2">
+		<div class = "flex-ns items-center cf ph3 center">
+			<div class="fl ph4 tc tl-ns">
+				<small class="f6 db tc">© 2020 <b class="ttu">pj</b></small>
+
+
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+
+<!-- End Document
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
