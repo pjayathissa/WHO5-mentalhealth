@@ -27,6 +27,11 @@ var rangeSlider = function() {
     console.log(slider.value)
     var rangeName = slider.id + "-value"
     document.getElementById(slider.id + "-value").value = textSelection[slider.value];
+    if (slider.value > 4) {
+      document.getElementById(slider.id + "-info").style.display = "inline"
+    } else {
+      document.getElementById(slider.id + "-info").style.display = "none"
+    }
 
 
     

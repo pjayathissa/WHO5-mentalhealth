@@ -37,58 +37,70 @@
 
   <!-- Primary Page Layout
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<section class="sans-serif bg-white black">
 
+		<div class="tc ph7-l pa3">
+			<img src="images/people.png"> 
+		</div>
 
-<section class="sans-serif bg-white black ">
-	<div class="fl w-100 ph3 bg-white black pa3">
+</section>
+
+<section class="sans-serif bg-dark-gray white">
+	<div class="ph3 ">
 		
 		<div class="container tc">
 		  <div>
-		  	<div class = "pb2"> I have felt cheerful and in good spirits:</div>
+		  	<div class = "pb2 pt3"> I have felt cheerful and in good spirits:</div>
 		  	<output id="my-range-1-value" class ="b">5</output> </br>
 		  	Always <input id = "my-range-1" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
 		  </div>
+		  <div id = "my-range-1-info" class = "ba b--white bg-white black"> Add links about spirits here</div>
 		  <div>
-		  	<div class = "pb2"> I have felt calm and relaxed</div>
+		  	<div class = "pb2 pt3 pt3"> I have felt calm and relaxed</div>
 		  	<output id="my-range-2-value" class ="b">5</output></br>
 		  	Always <input id = "my-range-2" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
 		  </div>
+		  <div id = "my-range-2-info" class = "ba b--white bg-white black"> Add links about calmness here</div>
 		  <div>
-		  	<div class = "pb2"> I have felt active and vigorous</div>
+		  	<div class = "pb2 pt3"> I have felt active and vigorous</div>
 		  	<output id="my-range-3-value" class ="b">5</output></br>
 		  	Always <input id = "my-range-3" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
 		  </div>
+		  <div id = "my-range-3-info" class = "ba b--white bg-white black"> Add links about activity here</div>
 		  <div>
-		  	<div class = "pb2"> I woke up feeling fresh and rested</div>
+		  	<div class = "pb2 pt3"> I woke up feeling fresh and rested</div>
 		  	<output id="my-range-4-value" class ="b">5</output></br>
 		  	Always <input id = "my-range-4" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
 		  </div>
+		  <div id = "my-range-4-info" class = "ba b--white bg-white black"> Add links about rest here</div>
 		  <div>
-		  	<div class = "pb2"> My daily life has been filled with things that interest me </div>
+		  	<div class = "pb2 pt3"> My daily life has been filled with things that interest me </div>
 		  	<output id="my-range-5-value" class ="b">5</output></br>
 		  	Always <input id = "my-range-5" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
 		  </div>
+		  <div id = "my-range-5-info" class = "ba b--white bg-white black"> Add links about interest here</div>
 		 </div>
 
-		 <div class="bg-dark-gray white pa3">
-		 	<div class = "b f3"> Results </div>
-		 	<div class = "pb3"> You have a score of <output id="final-score" class ="b"></output></div>
-		 	<div class = "dn" id ="score-above-13"> 
-		 		Based on your score we recommend the following solutions (add text for above 13)
-
-		 	</div>
-		 	<div class = "dn" id = "score-below-13"> 
-		 		Based on your score, we can recommend the following solutions (add text for under 13)
-
-		 	</div>
-
-		 </div>
+		 
 
 
 	</div>
 </section>
 
+<section class="sans-serif bg-white black ">
+<div class="bg-white black pa3">
+		 	<div class = "b f3"> Results </div>
+		 	<div class = "pb3"> You have a score of <output id="final-score" class ="b"></output></div>
+		 	<div class = "dn" id ="score-above-13"> 
+		 		Based on your score we recommend the following solutions (add text for above 13)
+		 	</div>
+		 	<div class = "dn" id ="score-below-13"> 
+		 		Based on your score we recommend the following solutions (add text for below 13)
+		 	</div>
 
+
+		 </div>
+</section>
 
 
 
