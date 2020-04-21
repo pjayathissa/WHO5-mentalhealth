@@ -28,7 +28,7 @@ var rangeSlider = function() {
     var rangeName = slider.id + "-value"
     document.getElementById(slider.id + "-value").value = textSelection[slider.value];
     if (slider.value > 4) {
-      document.getElementById(slider.id + "-info").style.display = "inline"
+      document.getElementById(slider.id + "-info").style.display = "block"
     } else {
       document.getElementById(slider.id + "-info").style.display = "none"
     }
@@ -41,12 +41,12 @@ var rangeSlider = function() {
   document.getElementById("final-score").value =  finalScore
 
   if (finalScore > 13) {
-    document.getElementById("score-above-13").style.display = "inline"
+    document.getElementById("score-above-13").style.display = "block"
     document.getElementById("score-below-13").style.display = "none"
 
   }
   else {
-    document.getElementById("score-below-13").style.display = "inline"
+    document.getElementById("score-below-13").style.display = "block"
     document.getElementById("score-above-13").style.display = "none"
   }
 };

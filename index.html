@@ -16,7 +16,7 @@
   <!-- FONT
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
   <!-- CSS
@@ -33,66 +33,93 @@
   	<link rel="icon" type="image/png" href="../../dist/images/favicon.ico">
 
   </head>
-  <body onLoad ="rangeSlider()">
+  <body onLoad ="rangeSlider()" style="background-image:url(images/temp.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center;" class = "cover">
 
   <!-- Primary Page Layout
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section class="sans-serif bg-white black">
+<section class="nunito custom-blue">
+		<div class = "tc center pt3 fw6 pb5">
+			<img src="images/noun_heart.png" class = "w-20">
+			</br>
+			LET'S TALK 
+			</br> 
+			ABOUT IT
+			
+		</div>
 
-		<div class="tl center w-40-l pa3 pt4">
+		<div class="tc center w-40-l pa3 ph4 pt4 f3 fw5 pb6">
 			COVID-19 has psychologically impacted all people, all cultures, in many different countries.
-			</br></br>
+		</div>
+		<div class="tc center w-40-l pa3 ph4 pt4 f3 fw5 pb6">
 			We as healthcare workers, part of the 'essential workforce',  are not immune to this stressful time.
-			</br></br>
+<!-- 			</br></br>
 			We are not used to responding to people's needs, the way we are responding now. We are also not familiar with such an ever changing landscape at a global level.
 			</br></br>
-			This section helps you to recognise your reaction to COVID-19 and provides you with some 'bespoke' solutions
+			This section helps you to recognise your reaction to COVID-19 and provides you with some 'bespoke' solutions -->
 		</div>
 
 </section>
 
-<section class="sans-serif bg-white black">
-
-		<div class="center w-40-l pa3">
-			<img src="images/people.png"> 
-		</div>
+<section class="cf center nunito custom-blue ph7-l ph3-m">
+	<div class = "tc f3 fw6 pb3">What are my colleagues saying?</div>
+	<div class="fl-l fl-m center w-70 w-50-m w-25-l tc pv1"><img src="images/PeopleBlue1.png"> </div>
+  	<div class="fl-l fl-m center w-70 w-50-m w-25-l tc pv1"><img src="images/PeopleBlue2.png"> </div>
+  	<div class="fl-l fl-m center w-70 w-50-m w-25-l tc pv1"><img src="images/PeopleBlue3.png"> </div>
+  	<div class="fl-l fl-m center w-70 w-50-m w-25-l tc pv1"><img src="images/PeopleBlue4.png"> </div>
 
 </section>
 
-<section class="sans-serif bg-dark-gray white">
+<section class="nunito custom-blue">
+	<div class="tc center w-40-l pa3 ph4 pt4 f3 fw5">
+			Let's do a quick </br> check-in
+		</div>
 	<div class="ph3 ">
-		
 		<div class="container tc center">
-		  <div>
-		  	<div class = "pb2 pt3"> I have felt cheerful and in good spirits:</div>
-		  	<output id="my-range-1-value" class ="b">5</output> </br>
-		  	Always <input id = "my-range-1" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
+		  <div class = "pb4">
+		  	<div class = "pb2 pt3 fw6 f4"> I have felt cheerful and in good spirits:</div>
+		  	<output id="my-range-1-value" class ="f4 fw3 i">5</output> </br>
+		  	<input id = "my-range-1" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
+		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
+		  		<div class = "fl">Always</div> <div class = "fr">Never</div>
+		  	</div>
 		  </div>
-		  <div id = "my-range-1-info" class = "pa3 dn ba b--white bg-light-gray black"> Option to add links about spirits here</div>
-		  <div>
-		  	<div class = "pb2 pt3 pt3"> I have felt calm and relaxed</div>
-		  	<output id="my-range-2-value" class ="b">5</output></br>
-		  	Always <input id = "my-range-2" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
+		  <div id = "my-range-1-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
+		  <div class = "pb4">
+		  	<div class = "pb2 pt3 fw6 f4"> I have felt calm and relaxed</div>
+		  	<output id="my-range-2-value" class ="f4 fw3 i">5</output></br>
+		  	<input id = "my-range-2" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
+		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
+		  		<div class = "fl">Always</div> <div class = "fr">Never</div>
+		  	</div>
 		  </div>
-		  <div id = "my-range-2-info" class = "pa3 dn ba b--white bg-light-gray black"> Option to add links about calmness here</div>
-		  <div>
-		  	<div class = "pb2 pt3"> I have felt active and vigorous</div>
-		  	<output id="my-range-3-value" class ="b">5</output></br>
-		  	Always <input id = "my-range-3" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
+		  <div id = "my-range-2-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
+		  <div class = "pb4">
+		  	<div class = "pb2 pt3 fw6 f4"> I have felt active and vigorous</div>
+		  	<output id="my-range-3-value" class ="f4 fw3 i">5</output></br>
+		  	<input id = "my-range-3" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
+		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
+		  		<div class = "fl">Always</div> <div class = "fr">Never</div>
+		  	</div>
 		  </div>
-		  <div id = "my-range-3-info" class = "pa3 dn ba b--white bg-light-gray black"> Option to add links about activity here</div>
-		  <div>
-		  	<div class = "pb2 pt3"> I woke up feeling fresh and rested</div>
-		  	<output id="my-range-4-value" class ="b">5</output></br>
-		  	Always <input id = "my-range-4" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
+		  <div id = "my-range-3-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
+		  <div class = "pb4">
+		  	<div class = "pb2 pt3 fw6 f4"> I woke up feeling fresh and rested</div>
+		  	<output id="my-range-4-value" class ="f4 fw3 i">5</output></br>
+		  	<input id = "my-range-4" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
+		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
+		  		<div class = "fl">Always</div> <div class = "fr">Never</div>
+		  	</div>
 		  </div>
-		  <div id = "my-range-4-info" class = "pa3 dn ba b--white bg-light-gray black"> Option to add links about rest here</div>
-		  <div>
-		  	<div class = "pb2 pt3"> My daily life has been filled with things that interest me </div>
-		  	<output id="my-range-5-value" class ="b">5</output></br>
-		  	Always <input id = "my-range-5" class = "rangeClass mb4 mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/> Never
+		  <div id = "my-range-4-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
+		  <div class = "pb4">
+		  	<div class = "pb2 pt3 fw6 f4"> My daily life has been filled with things that interest me </div>
+		  	<output id="my-range-5-value" class ="f4 fw3 i">5</output></br>
+		  	<input id = "my-range-5" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
+		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
+		  		<div class = "fl">Always</div> <div class = "fr">Never</div>
+		  	</div>
 		  </div>
-		  <div id = "my-range-5-info" class = "pa3 dn ba b--white bg-light-gray black"> Option to add links about interest here</div>
+		  <div id = "my-range-5-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
 		 </div>
 
 		 
@@ -101,24 +128,24 @@
 	</div>
 </section>
 
-<section class="sans-serif bg-white black ">
-<div class="bg-white black pa3 tl center w-40-l">
-		 	<div class = "b f3"> Results </div>
-		 	<div class = "pb3"> You have a score of <output id="final-score" class ="b"></output></div>
-		 	<div class = "dn" id ="score-above-13"> 
-		 		Based on your score we recommend the following self-help tools: </br>
-		 		<ul><a href="https://www.allright.org.nz/campaigns/getting-through-together" class="dim" target = "_blank">Getting Through Together</a> </ul>
-		 		<ul><a href="https://www.melonhealth.com/covid-19/" class="dim" target = "_blank">Melon</a> </ul>
-		 		<ul><a href="https://www.justathought.co.nz/covid19" class="dim" target = "_blank">Just a Thought</a> </ul>
-		 		<ul><a href="https://www.otnz.co.nz/" class="dim" target = "_blank">Occupational Therapy New Zealand</a> </ul>
-		 		<ul><a href="https://www.healthnavigator.org.nz/" class="dim" target = "_blank">Health Navigator</a> </ul>
+<section class="nunito custom-blue ">
+<div class=" pa3 tc center w-40-l">
+		 	<div class = "fw5 f3"> You scored</div>
+		 	<div class = "pb3 f2 fw6"><output id="final-score"></output></div>
+		 	<div class = "fw5 f3 pb3"> Based on your score here are some things you can do now:</div>
+		 	<div class = "dn fw5 f4" id ="score-above-13"> 
+		 		</br><a href="https://www.allright.org.nz/campaigns/getting-through-together" class="link custom-blue underline dim" target = "_blank">Getting Through Together</a>
+		 		</br><a href="https://www.melonhealth.com/covid-19/" class="link custom-blue underline dim" target = "_blank">Melon</a>
+		 		</br><a href="https://www.justathought.co.nz/covid19" class="link custom-blue underline dim" target = "_blank">Just a Thought</a>
+		 		</br><a href="https://www.otnz.co.nz/" class="link custom-blue underline dim" target = "_blank">Occupational Therapy New Zealand</a>
+		 		</br><a href="https://www.healthnavigator.org.nz/" class="link custom-blue underline dim" target = "_blank">Health Navigator</a>
 		 	
 
 
 
 		 	</div>
-		 	<div class = "dn" id ="score-below-13"> 
-		 		Based on your score we recommend the following solutions (add text for below 13)
+		 	<div class = "dn fw5 f4" id ="score-below-13"> 
+		 		<ul>Give someone a hug. You're doing alright, but others around you may not be </ul>
 		 	</div>
 
 
@@ -131,11 +158,11 @@
 
 
 
-<section class="sans-serif bg-dark-gray white ">
-	<div class="fl w-100 ph1 bg-dark-gray white pa2">
+<section class="sans-serif">
+	<div class="fl w-100 ph1 bg-custom-blue white pa2">
 		<div class = "flex-ns items-center cf ph3 center">
 			<div class="fl ph4 tc tl-ns">
-				<small class="f6 db tc">© 2020 <b class="ttu">pj</b></small>
+				<small class="f6 db tc">© 2020 WDHB<b class="ttu"></b></small>
 
 
 
