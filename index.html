@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
   	<meta charset="utf-8">
-  	<title>PJs Tachyons Template</title>
+  	<title>WDHB Mental Health Checklist</title>
   	<meta name="description" content="">
   	<meta name="author" content="">
 
@@ -26,11 +26,13 @@
 
   <!-- JS
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<script src="data/links.js"></script>
   	<script src="js/client.js"></script>
+
 
   <!-- Favicon
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  	<link rel="icon" type="image/png" href="../../dist/images/favicon.ico">
+  	<link rel="icon" type="image/png" href="images/favicon.ico">
 
   </head>
   <body onLoad ="rangeSlider()" style="background-image:url(images/temp.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center;" class = "cover">
@@ -77,49 +79,49 @@
 		<div class="container tc center">
 		  <div class = "pb4">
 		  	<div class = "pb2 pt3 fw6 f4"> I have felt cheerful and in good spirits:</div>
-		  	<output id="my-range-1-value" class ="f4 fw3 i">5</output> </br>
-		  	<input id = "my-range-1" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
+		  	<output id="cheerful-value" class ="f4 fw3 i">5</output> </br>
+		  	<input id = "cheerful" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
 		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
 		  		<div class = "fl">Always</div> <div class = "fr">Never</div>
 		  	</div>
 		  </div>
-		  <div id = "my-range-1-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
+		  <div id = "cheerful-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
 		  <div class = "pb4">
 		  	<div class = "pb2 pt3 fw6 f4"> I have felt calm and relaxed</div>
-		  	<output id="my-range-2-value" class ="f4 fw3 i">5</output></br>
-		  	<input id = "my-range-2" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
+		  	<output id="relaxed-value" class ="f4 fw3 i">5</output></br>
+		  	<input id = "relaxed" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
 		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
 		  		<div class = "fl">Always</div> <div class = "fr">Never</div>
 		  	</div>
 		  </div>
-		  <div id = "my-range-2-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
+		  <div id = "relaxed-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
 		  <div class = "pb4">
 		  	<div class = "pb2 pt3 fw6 f4"> I have felt active and vigorous</div>
-		  	<output id="my-range-3-value" class ="f4 fw3 i">5</output></br>
-		  	<input id = "my-range-3" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
+		  	<output id="active-value" class ="f4 fw3 i">5</output></br>
+		  	<input id = "active" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
 		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
 		  		<div class = "fl">Always</div> <div class = "fr">Never</div>
 		  	</div>
 		  </div>
-		  <div id = "my-range-3-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
+		  <div id = "active-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
 		  <div class = "pb4">
 		  	<div class = "pb2 pt3 fw6 f4"> I woke up feeling fresh and rested</div>
-		  	<output id="my-range-4-value" class ="f4 fw3 i">5</output></br>
-		  	<input id = "my-range-4" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
+		  	<output id="rested-value" class ="f4 fw3 i">5</output></br>
+		  	<input id = "rested" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
 		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
 		  		<div class = "fl">Always</div> <div class = "fr">Never</div>
 		  	</div>
 		  </div>
-		  <div id = "my-range-4-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
+		  <div id = "rested-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
 		  <div class = "pb4">
 		  	<div class = "pb2 pt3 fw6 f4"> My daily life has been filled with things that interest me </div>
-		  	<output id="my-range-5-value" class ="f4 fw3 i">5</output></br>
-		  	<input id = "my-range-5" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
+		  	<output id="fulfill-value" class ="f4 fw3 i">5</output></br>
+		  	<input id = "fulfill" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
 		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
 		  		<div class = "fl">Always</div> <div class = "fr">Never</div>
 		  	</div>
 		  </div>
-		  <div id = "my-range-5-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
+		  <div id = "fulfill-info" class = "pa3 dn ba w-50-l center"> <a class = "link custom-blue underline dim" href="tel:1737">Click to call the mental health helpline</a></div>
 		 </div>
 
 		 
@@ -132,20 +134,16 @@
 <div class=" pa3 tc center w-40-l">
 		 	<div class = "fw5 f3"> You scored</div>
 		 	<div class = "pb3 f2 fw6"><output id="final-score"></output></div>
-		 	<div class = "fw5 f3 pb3"> Based on your score here are some things you can do now:</div>
-		 	<div class = "dn fw5 f4" id ="score-above-13"> 
-		 		</br><a href="https://www.allright.org.nz/campaigns/getting-through-together" class="link custom-blue underline dim" target = "_blank">Getting Through Together</a>
-		 		</br><a href="https://www.melonhealth.com/covid-19/" class="link custom-blue underline dim" target = "_blank">Melon</a>
-		 		</br><a href="https://www.justathought.co.nz/covid19" class="link custom-blue underline dim" target = "_blank">Just a Thought</a>
-		 		</br><a href="https://www.otnz.co.nz/" class="link custom-blue underline dim" target = "_blank">Occupational Therapy New Zealand</a>
-		 		</br><a href="https://www.healthnavigator.org.nz/" class="link custom-blue underline dim" target = "_blank">Health Navigator</a>
 		 	
-
-
-
+		 	<div class = "dn fw5 f4" id ="score-above-13"> 
+		 		<div class = "fw5 f3 pb3"> Based on your score here are the top two recommended apps to try out:</div>
+		 		<div id="top-two-list"></div>
+		 		<div class = "fw5 f3 pb3 pt5"> And here are the rest, in order of importance</div>
+		 		<div id="rest-list"></div>
 		 	</div>
 		 	<div class = "dn fw5 f4" id ="score-below-13"> 
-		 		<ul>Give someone a hug. You're doing alright, but others around you may not be </ul>
+		 		<div class = "fw5 f3 pb3"> You seems to be doing alright, but others around you may be not, here are some tools that you can use to support them:</div>
+		 		<div><a href = "https://checkin.heartwork.co.nz/" class = "link custom-blue underline dim">Set up a checkin room with heartwork</a></div>
 		 	</div>
 
 
