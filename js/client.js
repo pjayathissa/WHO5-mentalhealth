@@ -22,8 +22,7 @@ var rangeSlider = function() {
   //itterate through sliders and adjust value above it to meet the text
   sliders.forEach((slider) => {
     var rangeName = slider.id + "-value";
-    document.getElementById(slider.id + "-value").value =
-      textSelection[slider.value];
+    document.getElementById(slider.id + "-value").value = textSelection[slider.value];
     // if "never" is selected it is an emergency
     if (slider.value > 4) {
       document.getElementById(slider.id + "-info").style.display = "block";
