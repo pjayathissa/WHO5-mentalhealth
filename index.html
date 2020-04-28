@@ -34,6 +34,7 @@
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
   	<script src="data/links.js"></script>
   	<script src="js/client.js"></script>
+  	<script src="js/modal.js"></script>
 
 
   <!-- Favicon
@@ -41,7 +42,7 @@
   	<link rel="icon" type="image/png" href="images/favicon.ico">
 
   </head>
-  <body onLoad ="rangeSlider()" style="background-image:url(images/temp.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center;" class = "cover">
+  <body onLoad ="rangeSlider(); getModal()" style="background-image:url(images/temp.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center;" class = "cover">
 
   <!-- Primary Page Layout
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -73,13 +74,35 @@
 </section>
 
 <section class="nunito custom-blue">
-	<div class="tc center w-40-l pa3 ph4 pt4 f3 fw5">
-			Let's do a quick check-in
-		</div>
+	<div class="tc center w-40-l pt3 ph4 pt4 f3 fw5">
+			Answer the five questions to help us find your best resources
+	</div>
+	<div id = "morePayInfo" class="pointer tc center w-40-l pt1 pb3 ph4 f5 fw5">
+			None of your responses are recorded or stored <img src="images/questioniconblue.png" class = "h1">
+
+	</div>
+
+	  <!-- The Modal -->
+	  <div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content tl">
+	    <span class="close">&times;</span>
+	    <p class = "b">Your Data</p>
+	    <p>This page recommends helpful and appropriate resources by asking you a few questions</p>
+
+	    <p><b>None of this data is collected, stored, or leaves your device </b>. It is deleted once you close the page and cannot be traced back to you.</p>
+	    <p>For any concerns or queries regarding this, please contact us at <a href= "mailto:wellbeingteam@waitematadhb.govt.nz" class = " f6 f5-ns link custom-blue underline dim"> wellbeingteam@waitematadhb.govt.nz</a></p>
+
+	  </div>
+
+	</div>
+
 	<div class="ph3 ">
 		<div class="container tc center">
 		  <div class = "pb4">
-		  	<div class = "pb2 pt3 fw6 f4"> I have felt cheerful and in good spirits:</div>
+		  	<div class = "pt3 fw6 f3 underline"> Harakoa </div>
+		  	<div class = "pb2 pt1 fw6 f4"> I have felt cheerful and in good spirits:</div>
 		  	<output id="cheerful-value" class ="f4 fw3 i">5</output> </br>
 		  	<input id = "cheerful" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
 		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
@@ -88,7 +111,8 @@
 		  </div>
 		  <div id = "cheerful-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
 		  <div class = "pb4">
-		  	<div class = "pb2 pt3 fw6 f4"> I have felt calm and relaxed</div>
+		  	<div class = "pt3 fw6 f3 underline"> Marino/Pārore </div>
+		  	<div class = "pb2 pt1 fw6 f4"> I have felt calm and relaxed</div>
 		  	<output id="relaxed-value" class ="f4 fw3 i">5</output></br>
 		  	<input id = "relaxed" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
 		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
@@ -97,7 +121,8 @@
 		  </div>
 		  <div id = "relaxed-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
 		  <div class = "pb4">
-		  	<div class = "pb2 pt3 fw6 f4"> I have felt active and vigorous</div>
+		  	<div class = "pt3 fw6 f3 underline"> Pākahukahu </div>
+		  	<div class = "pb2 pt1 fw6 f4"> I have felt active and vigorous</div>
 		  	<output id="active-value" class ="f4 fw3 i">5</output></br>
 		  	<input id = "active" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
 		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
@@ -106,7 +131,8 @@
 		  </div>
 		  <div id = "active-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
 		  <div class = "pb4">
-		  	<div class = "pb2 pt3 fw6 f4"> I woke up feeling fresh and rested</div>
+		  	<div class = "pt3 fw6 f3 underline"> Tāmata/Okioki pai </div>
+		  	<div class = "pb2 pt1 fw6 f4"> I woke up feeling fresh and rested</div>
 		  	<output id="rested-value" class ="f4 fw3 i">5</output></br>
 		  	<input id = "rested" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
 		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
@@ -115,7 +141,8 @@
 		  </div>
 		  <div id = "rested-info" class = "pa3 dn ba w-50-l center"> Click to call <a class = "link custom-blue underline dim" href="tel:1737">Mental Health Helpline</a></div>
 		  <div class = "pb4">
-		  	<div class = "pb2 pt3 fw6 f4"> My daily life has been filled with things that interest me </div>
+		  	<div class = "pt3 fw6 f3 underline"> Ngahau/Uruhau </div>
+		  	<div class = "pb2 pt1 fw6 f4"> My daily life has been filled with things that interest me </div>
 		  	<output id="fulfill-value" class ="f4 fw3 i">5</output></br>
 		  	<input id = "fulfill" class = "rangeClass mt3" type = "range" min="0" max="5" oninput="rangeSlider()"/>
 		  	<div class = "cf w-20-l w-30-m w-60 center fw6 f6">
@@ -133,11 +160,11 @@
 
 <section class="nunito custom-blue ">
 <div class=" pa3 tc center w-40-l pb6">
-		 	<div class = "fw5 f3"> You scored</div>
-		 	<div class = "pb3 f2 fw6"><output id="final-score"></output></div>
+		 	<!-- <div class = "fw5 f3"> You scored</div> -->
+		 	<div class = "pb3 f2 fw6 dn"><output id="final-score"></output></div>
 		 	
-		 	<div class = "dn fw5 f4" id ="score-above-13"> 
-		 		<div class = "fw5 f3 pb3"> Based on your score here are the top two recommended resources to try:</div>
+		 	<div class = "dn fw5 f4 pt5" id ="score-above-13"> 
+		 		<div class = "fw5 f3 pb3"> Based on your inputs here are the top two recommended resources to try:</div>
 		 		<div id="top-two-list"></div>
 		 		<div class = "fw5 f3 pb3 pt5"> And here are the rest, in order of importance:</div>
 		 		<div id="rest-list"></div>
@@ -157,7 +184,7 @@
 	<img src="images/heart.png" class = "w-10 pa3">
 		 	<div class = "fw5 f4 pb3">Thank you for all your hard work during this time. Don’t hesitate to reach out to us for feedback, or if you have any resource suggestions.</div>
 		 	<div class = "fw5 f5">The Wellbeing Team</div>
-		 	<div class = "fw5 f5 pb5"> <a>wellnessteam@waitematadhb.govt.nz</a></div>
+		 	<div class = "fw5 f5 pb5"> <a>wellbeingteam@waitematadhb.govt.nz</a></div>
 		 	<div class = "fw5 f5 pb5">
 		 		<img src="images/WDHBLogoWhite.png" class = "w-20">
 		 		<img src="images/i3LogoWhite.png" class = "w-20">
