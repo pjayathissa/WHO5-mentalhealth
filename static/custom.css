@@ -6,19 +6,31 @@
 	background-color: #0678AC;
 }
 
-.bg-image-custom {
+/*.bg-image-custom {
   position: fixed;
   z-index: -1;
   height: 100vh;
   width: 100%;
 	background-size: cover;
-	background-image:url(../images/temp.jpg);
+	
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: 50% 50%;
   display: block;
-}
+  box-sizing: border-box;
+}*/
 
+.bg-image-custom {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-image:url(../images/temp.jpg);  
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .nunito {
 	font-family: 'Nunito', sans-serif;
