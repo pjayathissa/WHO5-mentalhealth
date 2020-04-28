@@ -11,7 +11,7 @@
 
   <!-- Mobile Specific Metas
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Sharing specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,6 +32,7 @@
 
   <!-- JS
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<script src="js/internetExplorer.js"></script>
   	<script src="data/links.js"></script>
   	<script src="js/client.js"></script>
   	<script src="js/modal.js"></script>
@@ -42,13 +43,17 @@
   	<link rel="icon" type="image/png" href="images/favicon.ico">
 
   </head>
-  <body onLoad ="rangeSlider(); getModal()" class = "bg-image-custom">
+  <body onLoad ="rangeSlider(); getModal(); isIE()" class = "bg-image-custom">
 
   <!-- Primary Page Layout
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <section class="nunito custom-blue">
 		<div class = "tc center pt3 fw6 pb5">
 			<img src="images/letstalk.png" class = "w-20 w-10-l">
+		</div>
+
+		<div id = "ieCheck" class="dn red tc center w-40-l pa3 ph4 pt4 f3 fw5 pb6 lh-copy">
+			Warning: You are using Internet Explorer, which has not been supported since 2013. Please open this page in Chrome or Firefox by copying and pasting the URL
 		</div>
 
 		<div class="tc center w-40-l pa3 ph4 pt4 f3 fw5 pb6 lh-copy">
