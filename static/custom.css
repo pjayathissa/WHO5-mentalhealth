@@ -29,7 +29,7 @@
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
 }
 
 .nunito {
