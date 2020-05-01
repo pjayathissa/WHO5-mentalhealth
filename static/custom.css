@@ -2,6 +2,10 @@
 	color: #0678AC;
 }
 
+.custom-white {
+  color: #FFFFFF;
+}
+
 .bg-custom-blue {
 	background-color: #0678AC;
 }
@@ -25,7 +29,7 @@
   z-index: -1;
   width: 100%;
   height: 100vh;
-  background-image:url(../images/temp.jpg);  
+  background-image:url(../images/green-bg.jpg);  
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,39 +50,47 @@ input[type="range"]:focus {
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
- background: #0678AC;
+ background: #ffffff;/*#0678AC;*/
  height: 5px;
 }
 
 input[type="range"]::-moz-range-track {
- background-color: #0678AC;
+ background-color: #ffffff;/*#0678AC;*/
 
 }
 
 
 input[type="range"]::-webkit-slider-thumb {
  -webkit-appearance: none;
- height: 15px;
- width: 15px;
- background: #0678AC;
- margin-top: -5px;
+ height: 25px;
+ width: 25px;
+ background: #ffffff;/*#0678AC;*/
+ margin-top: -10px;
  border-radius: 50%;
  cursor: pointer;
  border: 1px solid #ffffff;
+ box-shadow: 3px 3px 3px #00000021;
 }
 
 input[type="range"]::-moz-range-thumb {
- height: 15px;
- width: 15px;
- background: #0678AC;
- margin-top: -5px;
+ height: 25px;
+ width: 25px;
+ background: #ffffff;/*#0678AC;*/
+ margin-top: -10px;
  border-radius: 50%;
  cursor: pointer;
+ border: 1px solid #ffffff;
+ box-shadow: 3px 3px 3px #00000021;
 }
 
 
 /* The Modal (background) */
 .modal {
+  background-image:url(../images/green-bg.jpg);  
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.92;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -94,17 +106,16 @@ input[type="range"]::-moz-range-thumb {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #ffffff;/*#888;*/
   width: 80%;
   border-radius: 25px;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #ffffff;/*#aaaaaa;*/
   float: right;
   font-size: 28px;
   font-weight: bold;
