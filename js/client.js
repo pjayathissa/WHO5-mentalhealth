@@ -59,7 +59,7 @@ var rangeSlider = function() {
       var li = document.createElement("a");
       li.setAttribute("href", link.url);
       li.setAttribute("target", "_blank");
-      li.setAttribute("class", "link custom-blue underline dim");
+      li.setAttribute("class", "link custom-white underline dim");
       li.setAttribute("id", link.name);
       li.appendChild(document.createTextNode(link.name));
       div.appendChild(li);
